@@ -1,0 +1,100 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  overflow: hidden;
+  background-color: #282c34;
+  min-height: 93vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Custom Scroll Bar */
+::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb
+{
+	background-color: #F90;	
+	background-image: -webkit-linear-gradient(45deg,
+	                                          rgba(255, 255, 255, .2) 25%,
+											  transparent 25%,
+											  transparent 50%,
+											  rgba(255, 255, 255, .2) 50%,
+											  rgba(255, 255, 255, .2) 75%,
+											  transparent 75%,
+											  transparent)
+}
+
+/* Custom Scroll Bar End */
+
+.list__item.selected {
+  background-color: rgba(0,0,0,0.3);
+}
+
+/* override bootstrap css affect antd **/
+.ant-btn img,svg {
+  vertical-align: baseline !important;
+}
+
+.round-btn {
+  background-color: #FFEA30;
+  color: black;
+}
+
+.multiSelect .select__control {
+  background: #282c34;
+  border-color: white;
+}
+
+.form-control {
+  border-radius: 3px;
+  margin-top: 30px;
+  font-size: 25px;
+  background-color: #282c34;
+  border-color: white;
+  color: white;
+}
+
+.form-control::placeholder {
+  color: white;
+}

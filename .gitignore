@@ -1,3 +1,9 @@
+# .env config file
+.env
+
+# jsonlock
+package-lock.json
+
 # OS generated files #
 ######################
 .DS_Store
@@ -50,6 +56,7 @@ build/Release
 # Dependency directories
 node_modules/
 jspm_packages/
+cometchat-pro-react-ui-kit/
 
 # TypeScript v1 declaration files
 typings/
@@ -112,3 +119,6 @@ dist
 
 # TernJS port file
 .tern-port
+
+cometchat-pro-react-ui-kit-master/
+build/

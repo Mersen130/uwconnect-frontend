@@ -1,0 +1,108 @@
+.unified__sidebar {
+    height: 90vh !important;
+    align-self: flex-end !important;
+}
+
+.chats__header, .contacts__header {
+    display: none !important;
+}
+
+.contacts, .chats {
+    padding: 0;
+    border: 0 !important;
+}
+
+.contacts__search {
+    background-color: rgba(0,0,0,0.4) !important;
+}
+
+.contacts__list__alphabet-filter, .item__details__name {
+    color: rgba(255,255,255,0.5) !important;
+    font-size: medium !important;
+}
+.contacts__list ,.chats__list {
+    height: 100%;
+}
+
+.search__input {
+    color: rgba(255,255,255,0.6) !important;
+    text-align:left !important
+}
+
+.item__details__desc {
+    border-bottom:1px solid rgba(255,255,255,0.4) !important
+}
+
+.item__details__last-message, .item__details__timestamp, .message__timestamp, .user__status {
+    color: rgba(255,255,255,0.4) !important;
+}
+
+.list__item__thumbnail img, .chat__thumbnail img, .callscreen__thumbnail img {
+    border-color: #fdd54f !important;
+    border-radius: 50% !important;
+    box-shadow: 0 0 1px 0px #fdd54f inset, 0 0 1px 0px #fdd54f;
+    border-width: 1.5px !important;
+}
+
+.list__item:hover {
+    background-color: rgba(255,255,255,0.3) !important;
+}
+
+.list__item:hover .item__details__name {
+    color: rgba(255,255,255,1) !important;
+}
+
+.list__item__actions {
+    background-color: #787B80 !important;
+}
+
+.chat__list, .chat__composer, .chat__header {
+    background-color: #282c34 !important;
+}
+
+.main__chat {
+    border-left: 0px !important;
+    border-right: 0px !important;
+}
+
+.message__date span {
+    background-color: transparent !important;
+    color: rgba(255,255,255,0.6) !important;
+    font-size: medium !important;
+}
+
+.input__inner {
+    background-color: transparent !important;
+    border: 0px !important;
+    box-shadow: 1px 1px 4px 2px rgba(0,0,0,0.3) !important;
+
+}
+
+.receiver__message__container .message__txt__wrapper {
+    background-color: rgba(255,255,255,0.1);
+}
+
+.receiver__message__container .message__txt {
+    color: white;
+}
+
+.input__message-input {
+    background-color: #1b1d22 !important;
+    border-radius: 8px !important;
+}
+
+.filelist__item:hover i, .attachment__icon:hover i, .button__emoji:hover i{
+    background-color: rgb(255,255,255) !important;
+}
+
+.confirm__dialog {
+    width: 500px !important;
+}
+
+.confirm__message {
+    color: black;
+}
+
+.confirm__buttons button[value="no"] {
+    color: black;
+}

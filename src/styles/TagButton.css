@@ -1,0 +1,33 @@
+.btn{
+
+    /* border-width: 2px; */
+    border-color: orange;
+    color: orange;
+
+}
+
+.btn-check {
+    display: none;
+    background-color: orange;
+    color: black;
+    
+    
+}
+
+.btn-check+.btn:hover {
+    border-width: 2px;
+    border-color: orange;
+    background-color: orange;
+    color: black;
+}
+
+
+.btn-check:checked+.btn{
+    border-width: 2px;
+    border-color: orange;
+    background-color: orange;
+    color: black;
+}
+
+
+

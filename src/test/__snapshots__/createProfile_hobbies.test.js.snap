@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<div
+  data-testid="hobbie-1"
+>
+  <div
+    className="profileHobbiesTag"
+  >
+    <br />
+    <div
+      className="mw-100 d-flex justify-content-center flex-wrap"
+      style={
+        Object {
+          "maxHeight": "31vh",
+          "overflow": "auto",
+        }
+      }
+    />
+  </div>
+</div>
+`;

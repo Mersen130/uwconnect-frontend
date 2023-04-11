@@ -1,0 +1,20 @@
+
+.ant-divider-inner-text {
+    color: rgba(255,255,255,0.4);
+}
+
+.ant-divider-horizontal.ant-divider-with-text-left::before,
+.ant-divider-horizontal.ant-divider-with-text-left::after
+{
+   border-top: 1px solid rgba(255,255,255,0.4);
+}
+
+.rec-section {
+    height: auto;
+    overflow: auto;
+    columns: 2;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 3%;
+    padding-top: 1%;
+}

@@ -1,5 +1,7 @@
-import App from './App.js';
+import './matchMedia.mock';
+import GetProfileHobbies from '../route/profile/hobbies';
 import {render,screen,cleanup} from '@testing-library/react'
+import renderer from 'react-test-renderer'
 import {
     BrowserRouter as Router,
     Routes,
@@ -7,14 +9,13 @@ import {
     redirect,
     Link
   } from "react-router-dom";
-
   import { Provider } from 'react-redux'
-  import { store } from './redux/store'
-  
-  // This is to create ReduxProvider for mock
-  const ReduxProvider = ({ children, reduxStore }) => (
-  <Provider store={reduxStore}>{children}</Provider>
-  )
+  import { store } from '../redux/store'
+
+// This is to create ReduxProvider for mock
+const ReduxProvider = ({ children, reduxStore }) => (
+<Provider store={reduxStore}>{children}</Provider>
+)
 
 afterEach(() => {
     cleanup();
@@ -38,8 +39,20 @@ beforeEach(() => {
     });
 })
 
-test('should render GetLoginForm component', () => {
-    render(<ReduxProvider reduxStore={store}><Router><App/></Router></ReduxProvider>);
-    const loginElement = screen.getByTestId('App-1');
+
+test('should render GetProfileHobbies component', () => {
+    render(<ReduxProvider reduxStore={store}><Router><GetProfileHobbies/></Router></ReduxProvider>);
+    const loginElement = screen.getByTestId('hobbie-1');
+    // const loginElement = screen.getByPlaceholderText("Faculty");
+    // const loginElement = screen.getByText("Faculty");
     expect(loginElement).toBeInTheDocument();
 } )
+
+
+
+test('matches snapshot', () => {
+    const tree = renderer.create(<ReduxProvider reduxStore={store}><Router><GetProfileHobbies/></Router></ReduxProvider>).toJSON();
+    expect(tree).toMatchSnapshot();
+
+} )
+    
